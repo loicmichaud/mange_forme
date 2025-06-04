@@ -104,7 +104,7 @@ function spawnShapes(n) {
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       size: s,
-      color: `hsl(${Math.random()*360},60%,50%)`,
+      color: "black",
       type: shapeTypes[Math.floor(Math.random()*shapeTypes.length)],
       alpha: 1
     });
