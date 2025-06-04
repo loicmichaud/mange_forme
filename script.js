@@ -174,14 +174,12 @@ function gameOver() {
 }
 
 startButton.addEventListener('click', () => {
-  if (soundToggle.checked) bgMusic.play(); else bgMusic.pause();
   pseudo = pseudoInput.value.trim() || "Joueur";
   startMenu.style.display = 'none';
   initGame();
 });
 
 replayButton.addEventListener('click', () => {
-  if (soundToggle.checked) bgMusic.play(); else bgMusic.pause();
   initGame();
 });
 
