@@ -1,6 +1,8 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: consolas;
+  font-size: 20px;
   background-image: linear-gradient(black, white);
   background-image: url("background.jpg");
 }
