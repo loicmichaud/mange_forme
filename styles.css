@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+canvas {
+  display: block;
+}
+
+#score, #timer, #pseudoDisplay, #highscoreDisplay {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+#score {
+  top: 10px;
+  left: 10px;
+}
+
+#timer {
+  top: 10px;
+  right: 10px;
+}
+
+#pseudoDisplay {
+  top: 50px;
+  left: 10px;
+}
+
+#highscoreDisplay {
+  top: 90px;
+  left: 10px;
+}
+
+#leaderboardDisplay {
+  position: absolute;
+  top: 170px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  z-index: 2;
+}
+
+#startMenu, #gameover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 3;
+}
+
+#gameover {
+  display: none;
+  font-size: 40px;
+}
+
+#replayButton, #startButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+  cursor: pointer;
+}
