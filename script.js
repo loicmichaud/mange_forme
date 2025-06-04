@@ -56,11 +56,25 @@ function updateLeaderboard() {
 }
 
 function updateHighscore() {
-  const best = JSON.parse(localStorage.getItem('bestScore')) || { score: 0, pseudo: '' };
-  if (score > best.score) localStorage.setItem('bestScore', JSON.stringify({ score, pseudo }));
-  const updated = JSON.parse(localStorage.getItem('bestScore'));
-  highscoreDisplay.textContent = `Meilleur score: ${updated.score} (${updated.pseudo})`;
+  let highscores = JSON.parse(localStorage.getItem('highscores')) || [];
+  let updated = false;
+  let newScore = { pseudo: pseudo, score: score };
+
+  for (let i = 0; i < highscores.length; i++) {
+    if (score > highscores[i].score) {
+      highscores.splice(i, 0, newScore);
+      updated = true;
+      break;
+    }
+  }
+
+  if (!updated) {
+    highscores.push(newScore);
+  }
+
+  localStorage.setItem('highscores', JSON.stringify(highscores));
 }
+
 
 function initGame() {
   score = 0;
