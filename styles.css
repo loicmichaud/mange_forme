@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: https://github.com/loicmichaud/mange_forme/blob/main/wallpaperflare.com_wallpaper.jpg;
+  background: "wallpaperflare.com_wallpaper.jpg";
 }
 
 canvas {
