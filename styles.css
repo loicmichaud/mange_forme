@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
+  background-image: linear-gradient(black, white);
   background-image: url("background.jpg");
 }
 
